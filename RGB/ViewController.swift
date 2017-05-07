@@ -10,16 +10,33 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var colorView: UIView!
+    
+    @IBOutlet weak var rSlider: UISlider! {
+        didSet{
+            rSlider.tintColor = UIColor.red
+        }
+    }
+    
+    @IBOutlet weak var gSlider: UISlider! {
+        didSet{
+            gSlider.tintColor = UIColor.green
+        }
+    }
+    
+    @IBOutlet weak var bSlider: UISlider!
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func changeColor() {
+        colorView.backgroundColor = UIColor(red: CGFloat(rSlider.value), green: CGFloat(gSlider.value), blue: CGFloat(bSlider.value), alpha: 1)
     }
-
-
+    
+    @IBAction func rgbSliderChange(_ sender: AnyObject) {
+        changeColor()
+    }
+    
 }
-
