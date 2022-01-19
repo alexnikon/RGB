@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,28 +16,28 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIJ-1n-6Dw">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <view contentMode="scaleToFill" horizontalCompressionResistancePriority="812" verticalCompressionResistancePriority="812" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIJ-1n-6Dw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <subviews>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="daI-Lz-wLm">
-                                        <rect key="frame" x="28" y="441" width="319" height="31"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="daI-Lz-wLm">
+                                        <rect key="frame" x="28" y="440" width="319" height="31"/>
                                         <connections>
                                             <action selector="rgbSliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="6E5-gJ-cVK"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yGG-DY-aQ8">
-                                        <rect key="frame" x="28" y="557" width="319" height="31"/>
-                                        <connections>
-                                            <action selector="rgbSliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="bmi-ec-BFI"/>
-                                        </connections>
-                                    </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="HER-Ku-bHf">
-                                        <rect key="frame" x="28" y="501" width="319" height="31"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="HER-Ku-bHf">
+                                        <rect key="frame" x="28" y="520" width="319" height="31"/>
                                         <connections>
                                             <action selector="rgbSliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ax4-8x-9Oz"/>
+                                        </connections>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yGG-DY-aQ8">
+                                        <rect key="frame" x="28" y="596" width="319" height="31"/>
+                                        <connections>
+                                            <action selector="rgbSliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="bmi-ec-BFI"/>
                                         </connections>
                                     </slider>
                                 </subviews>
@@ -46,7 +46,7 @@
                                     <constraint firstItem="yGG-DY-aQ8" firstAttribute="leading" secondItem="HER-Ku-bHf" secondAttribute="leading" id="1vg-l0-aOc"/>
                                     <constraint firstItem="HER-Ku-bHf" firstAttribute="top" secondItem="daI-Lz-wLm" secondAttribute="bottom" constant="30" id="24B-jq-5tw"/>
                                     <constraint firstItem="HER-Ku-bHf" firstAttribute="trailing" secondItem="daI-Lz-wLm" secondAttribute="trailing" id="6QN-7f-eP8"/>
-                                    <constraint firstAttribute="bottom" secondItem="yGG-DY-aQ8" secondAttribute="bottom" constant="80" id="FNm-90-tlB"/>
+                                    <constraint firstAttribute="bottom" secondItem="yGG-DY-aQ8" secondAttribute="bottom" constant="192" id="FNm-90-tlB"/>
                                     <constraint firstItem="daI-Lz-wLm" firstAttribute="leading" secondItem="cIJ-1n-6Dw" secondAttribute="leading" constant="30" id="FwP-cR-bNQ"/>
                                     <constraint firstItem="HER-Ku-bHf" firstAttribute="centerX" secondItem="cIJ-1n-6Dw" secondAttribute="centerX" id="OVn-GI-K6e"/>
                                     <constraint firstItem="HER-Ku-bHf" firstAttribute="leading" secondItem="daI-Lz-wLm" secondAttribute="leading" id="RYf-9C-lnU"/>
@@ -57,7 +57,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="cIJ-1n-6Dw" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="IJf-Xg-dS0"/>
+                            <constraint firstItem="cIJ-1n-6Dw" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="IJf-Xg-dS0"/>
                             <constraint firstItem="cIJ-1n-6Dw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Vdf-zu-ghb"/>
                             <constraint firstItem="cIJ-1n-6Dw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dRu-P4-R9w"/>
                             <constraint firstAttribute="trailing" secondItem="cIJ-1n-6Dw" secondAttribute="trailing" id="yf1-nP-BcQ"/>
@@ -72,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="436.23188405797106" y="285.93749999999994"/>
+            <point key="canvasLocation" x="-930.39999999999998" y="153.69458128078819"/>
         </scene>
     </scenes>
 </document>
